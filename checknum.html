@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checknum</title>
+</head>
+<body>
+<script>
+
+    let num = '1234567890';
+
+    function checkNum() {
+        let a = prompt("nhập kí tự: ");
+        let count = [];
+        for (let i = 0; i < a.length; i++) {
+            for (let j = 0; j < a[i].length; j++) {
+                if (num.indexOf(a[i][j]) != -1) count.push("true");
+                else count.push("false");
+            }
+        }
+        if (count.includes("false")) alert("false");
+        else alert("true");
+    }
+    checkNum();
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkchar</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let a;
+    let count;
+    for (i = 0; i < 10; i++) {
+        a = prompt("nhập kí tự: ");
+        arr.push(a);
+    }
+    let b = prompt("ký tự cần tra: ");
+
+    function checkchar(n) {
+        count = 0;
+        for (let j = 0; j < arr.length; j++) {
+            if (n == arr[j]) count += 1;
+        }
+        if (count == 0) alert("-1");
+        else alert(`ký tự xuất hiện ${count} lần`)
+    }
+
+    checkchar(b);
+</script>
+</body>
+</html>

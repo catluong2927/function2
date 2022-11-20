@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reversenum</title>
+</head>
+<body>
+<script>
+  let arr = [];
+  let a;
+  for(let i=0; i<2;i++){
+    a = prompt("nhập số:");
+    arr.push(a);
+  }
+  function reverseNum(n){
+    n.reverse();
+    alert(n.join(''));
+  }
+  reverseNum(arr);
+</script>
+</body>
+</html>
